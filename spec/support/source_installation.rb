@@ -9,8 +9,8 @@ shared_examples_for 'an installation from source' do |opt|
     expect(chef_run).to include_recipe 'java'
   end
 
-  it 'includes python recipe' do
-    expect(chef_run).to include_recipe 'python'
+  it 'includes poise-python recipe' do
+    expect(chef_run).to include_recipe 'poise-python'
   end
 
   it 'includes maven recipe' do

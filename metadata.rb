@@ -4,7 +4,7 @@ maintainer_email 'everpeace@gmail.com'
 license          'MIT'
 description      'Installs/Configures mesos'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.2.2'
+version          '0.2.3'
 
 supports         'ubuntu', '>= 12.04'
 supports         'centos', '>= 6.0'
@@ -17,7 +17,7 @@ recipe           "mesos::slave",   "configure the machine as slave."
 recipe           "mesos::docker-executor", "install mesos-docker executor"
 
 depends          'java'
-depends          'python'
+depends          'poise-python'
 depends          'build-essential'
 depends          'maven'
 depends          'ulimit'

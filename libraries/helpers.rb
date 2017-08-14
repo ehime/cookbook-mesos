@@ -233,8 +233,8 @@ module Helpers
           'centos' => ["python-devel", "java-1.7.0-openjdk-devel", "zlib-devel", "libcurl-devel", "openssl-devel", "cyrus-sasl-devel", "cyrus-sasl-md5"]
         },
         'dependency_recipes' => {
-          'ubuntu' => ["java", "python", "build-essential", "maven"],
-          'centos' => ["java", "python", "build-essential", "maven"]
+          'ubuntu' => ["java", "poise-python", "build-essential", "maven"],
+          'centos' => ["java", "poise-python", "build-essential", "maven"]
         }
       }
     end
